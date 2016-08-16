@@ -4,7 +4,7 @@ let exchange = 'rocket-chat-pubnub-integration';
 let queueName = 'rocket-chat-pubnub-queue';
 let queueKey = 'bohemian';
 let options = {
-  url: Meteor.settings.rabbitMQ.url
+  url: process.env.RABBITMQ_URL || Meteor.settings.rabbitMQ.url
 }
 
 Meteor.startup(() => {

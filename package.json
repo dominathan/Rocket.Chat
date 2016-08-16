@@ -3,7 +3,9 @@
   "scripts": {
     "start": "meteor run",
     "lint": "eslint .",
-    "deploy": "npm run build && pm2 startOrRestart pm2.json"
+    "deploy": "npm run build && pm2 startOrRestart pm2.json",
+    "dev-start": "meteor --settings settings.json",
+    "test": "meteor test practicalmeteor:mocha --settings settings.json"
   },
   "devDependencies": {
     "eslint": "^3.1.1"
